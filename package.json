@@ -1,6 +1,6 @@
 {
   "name": "umi-supervisor",
-  "description": "DRIMS Supervisor Portal Desktop Client",
+  "description": "DRIMS Staff Portal Desktop Client",
   "author": "DRIMS UMI <drim@umi.ac.ug>",
   "private": true,
   "version": "0.0.0",
