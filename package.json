@@ -79,7 +79,7 @@
     "publish": {
       "provider": "github",
       "owner": "DRIMS-UMI",
-      "repo": "UMI-Staff-Desktop"
+      "repo": "DRIMS-Staff-Desktop"
     },
     "directories": {
       "output": "release"
