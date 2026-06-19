@@ -26,12 +26,14 @@ apiRequest.interceptors.request.use((config) => {
 })
 
 apiRequest.interceptors.response.use((response) => response, (error) => {
-    if (error.response.status === 401) {
+    if (error.response && error.response.status === 401) {
         localStorage.removeItem("token")
         localStorage.removeItem("role")
         localStorage.removeItem("umi_auth_token")
         localStorage.removeItem("umi_auth_state")
-        window.location.href = "/login"
+        if (window.location.pathname !== "/login") {
+            window.location.href = "/login"
+        }
     }
     return Promise.reject(error)
 })
